@@ -7,7 +7,7 @@ import java.awt.event.ActionListener;
 public class Nahida extends JFrame implements ActionListener {
     Border bordo = BorderFactory.createLineBorder(Color.BLACK, 2);
     private JCheckBox arconte, fuerte, lanza, arco, catalizador, contratos, sabiduria, libertad;
-    private JButton aceptarBtn, salirBtn;
+    private JButton aceptarBtn, salirBtn, superclaseBtn;
     private JLabel descripcion, foto, etiResultado,etiResultado2;
 
     Nahida() {
@@ -55,16 +55,22 @@ public class Nahida extends JFrame implements ActionListener {
 
 
         aceptarBtn=new JButton("<html><font color='green'>Aceptar</font></html>");
-        aceptarBtn.setBounds(205, 185, 130, 65);
+        aceptarBtn.setBounds(205, 185, 120, 65);
         aceptarBtn.setBackground(Color.WHITE);
         aceptarBtn.addActionListener(this);
         add(aceptarBtn);
 
         salirBtn=new JButton("<html><font color='red'>Salir</font></html>");
-        salirBtn.setBounds(340, 185, 130, 65);
+        salirBtn.setBounds(330, 185, 120, 65);
         salirBtn.setBackground(Color.WHITE);
         salirBtn.addActionListener(this);
         add(salirBtn);
+
+        superclaseBtn=new JButton("<html><font color='rgb(254, 185, 0)'>¡¡Super Class!!</font></html>");
+        superclaseBtn.setBounds(455, 185, 120, 65);
+        superclaseBtn.setBackground(Color.WHITE);
+        superclaseBtn.addActionListener(this);
+        add(superclaseBtn);
 
 
         arconte=new JCheckBox();
@@ -182,6 +188,8 @@ public class Nahida extends JFrame implements ActionListener {
             etiResultado.setText(msj);
             etiResultado2.setText(msj2);
         }
+
+        if (evento.getSource()==superclaseBtn){new superClase();}
     }
 
 
