@@ -157,6 +157,8 @@ public class Venti extends JFrame implements ActionListener {
 
         if (evento.getSource()==salirBtn){this.dispose();}
 
+        if (evento.getSource()==superclaseBtn){new SPInterfaz(2600);}
+
         if (evento.getSource() == aceptarBtn){
             String msj= "Atributos elegidos: ";
             String msj2= "Metodo elegido: ";
@@ -191,6 +193,6 @@ public class Venti extends JFrame implements ActionListener {
             etiResultado.setText(msj);
             etiResultado2.setText(msj2);
         }
-        if (evento.getSource()==superclaseBtn){new superClase();}
+
     }
 }

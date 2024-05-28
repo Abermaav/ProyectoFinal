@@ -5,6 +5,8 @@ import java.awt.event.ActionListener;
 
 public class Interfaz extends JFrame implements ActionListener {
         private JButton b1, b2, b3;
+
+
     Interfaz() {
         setTitle("Arcontes :D");
         setSize(660, 353);
@@ -58,13 +60,14 @@ public class Interfaz extends JFrame implements ActionListener {
         add(b3);
     setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     setVisible(true);
+
     }
     @Override
     public void actionPerformed(ActionEvent evento) {
 
-        if (evento.getSource() == b1){new Zhongli();}
+        if (evento.getSource() == b1) {new Zhongli();}
         if (evento.getSource() == b2){new Nahida();}
         if (evento.getSource() == b3){new Venti();}
-
     }
+
 }

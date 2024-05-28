@@ -155,6 +155,8 @@ public class Nahida extends JFrame implements ActionListener {
     public void actionPerformed(ActionEvent evento) {
         if (evento.getSource()==salirBtn){this.dispose();}
 
+        if (evento.getSource()==superclaseBtn){new SPInterfaz("Nahida");}
+
         if (evento.getSource() == aceptarBtn){
             String msj= "Atributos elegidos: ";
             String msj2= "Metodo elegido: ";
@@ -188,8 +190,6 @@ public class Nahida extends JFrame implements ActionListener {
             etiResultado.setText(msj);
             etiResultado2.setText(msj2);
         }
-
-        if (evento.getSource()==superclaseBtn){new superClase();}
     }
 
 

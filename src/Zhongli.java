@@ -157,6 +157,8 @@ public class Zhongli extends JFrame implements ActionListener {
 
         if (evento.getSource()==salirBtn){this.dispose();}
 
+        if (evento.getSource()==superclaseBtn){new SPInterfaz();}
+
         if (evento.getSource() == aceptarBtn){
             String msj= "Atributos elegidos: ";
             String msj2= "Metodo elegido: ";
@@ -190,11 +192,6 @@ public class Zhongli extends JFrame implements ActionListener {
             etiResultado.setText(msj);
             etiResultado2.setText(msj2);
         }
-
-        if (evento.getSource()==superclaseBtn){new superClase();}
-
-
-
 
     }
 
