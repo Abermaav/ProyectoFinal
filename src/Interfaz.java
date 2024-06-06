@@ -4,7 +4,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class Interfaz extends JFrame implements ActionListener {
-        private JButton b1, b2, b3;
+    private final JButton b1;
+    private final JButton b2;
+    private final JButton b3;
 
 
     Interfaz() {
@@ -31,7 +33,6 @@ public class Interfaz extends JFrame implements ActionListener {
 
         b1=new JButton();
         b1.setBounds(20, 50, 200, 200);
-        b1.setBackground(Color.WHITE);
         b1.setIcon(b1icon);
         b1.setBorderPainted(true);
         b1.setOpaque(true);
@@ -41,7 +42,6 @@ public class Interfaz extends JFrame implements ActionListener {
 
         b2=new JButton();
         b2.setBounds(230, 50, 200, 200);
-        b2.setBackground(Color.WHITE);
         b2.setIcon(b2icon);
         b2.setBackground(new Color(135, 185, 128));
         b2.setBorderPainted(true);
@@ -51,13 +51,13 @@ public class Interfaz extends JFrame implements ActionListener {
 
         b3=new JButton();
         b3.setBounds(440, 50, 200, 200);
-        b3.setBackground(Color.WHITE);
         b3.setIcon(b3icon);
         b3.setBackground(new Color(93, 201, 160));
         b3.setBorderPainted(true);
         b3.setOpaque(true);
         b3.addActionListener(this);
         add(b3);
+
     setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     setVisible(true);
 

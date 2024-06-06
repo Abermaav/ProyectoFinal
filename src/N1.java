@@ -1,6 +1,6 @@
 public class N1 extends SuperClase {
-    private String columpio;
-    private String Bosque;
+    private final String columpio;
+    private final String Bosque;
 
     public N1(String elemento, String arma, String columpio, String Bosque){
         super(elemento,arma);

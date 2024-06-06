@@ -1,6 +1,6 @@
 public class Z1 extends SuperClase {
-    private String pasatiempo;
-    private String ciudad;
+    private final String pasatiempo;
+    private final String ciudad;
 
     public Z1(String elemento, String arma, String pasatiempo, String ciudad){
         super(elemento,arma);
@@ -14,3 +14,4 @@ public class Z1 extends SuperClase {
                 + " Zhongli suele pasear en su ciudad " + ciudad + "\n";
     }
 }
+

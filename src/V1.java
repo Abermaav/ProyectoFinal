@@ -1,6 +1,6 @@
 public class V1 extends SuperClase {
-    private String Musica;
-    private String comida;
+    private final String Musica;
+    private final String comida;
 
     public V1(String elemento, String arma, String Musica, String comida){
         super(elemento,arma);

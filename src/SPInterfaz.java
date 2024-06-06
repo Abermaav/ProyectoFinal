@@ -6,8 +6,8 @@ import java.awt.event.ActionListener;
 
 public class SPInterfaz extends JFrame implements ActionListener {
     Border bordo = BorderFactory.createLineBorder(Color.BLACK, 2);
-    private JTextArea texto;
-    private JButton salirBtn;
+    private final JTextArea texto;
+    private final JButton salirBtn;
     SPInterfaz() {
          Z1 z1= new Z1("Geo","Perfora Nubes", "Beber té", "Liyue");
         setTitle("Superclase Zhongli");
