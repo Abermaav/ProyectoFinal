@@ -10,7 +10,6 @@ public class V1 extends SuperClase {
 
     public String mostrarDatos() {
 
-        return " El elemento de Venti es " + elemento + "\nSu arma es un arco llamado "+ arma + "\n A Venti le gusta tocar musica con " + Musica
-                + "\n A venti le gusta comer " + comida + "\n";
+        return STR." El elemento de Venti es \{elemento}\nSu arma es un arco llamado \{arma}\n A Venti le gusta tocar musica con \{Musica}\n A venti le gusta comer \{comida}\n";
     }
 }

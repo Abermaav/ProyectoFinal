@@ -10,7 +10,6 @@ public class N1 extends SuperClase {
 
     public String mostrarDatos() {
 
-        return " El elemento de Nahida es " + elemento + "\n Su arma es un catalizador llamado "+ arma + "\n Nahida suele " + columpio
-                + "\n Nahida suele pasar su tiempo en " + Bosque + "\n";
+        return STR." El elemento de Nahida es \{elemento}\n Su arma es un catalizador llamado \{arma}\n Nahida suele \{columpio}\n Nahida suele pasar su tiempo en \{Bosque}\n";
     }
 }

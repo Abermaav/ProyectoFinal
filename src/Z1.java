@@ -10,8 +10,7 @@ public class Z1 extends SuperClase {
 
     public String mostrarDatos() {
 
-        return " El elemento de Zhongli es " + elemento + "\n Su arma es una lanza llamada "+ arma + "\n A Zhongli le gusta " + pasatiempo
-                + " Zhongli suele pasear en su ciudad " + ciudad + "\n";
+        return STR." El elemento de Zhongli es \{elemento}\n Su arma es una lanza llamada \{arma}\n A Zhongli le gusta \{pasatiempo} Zhongli suele pasear en su ciudad \{ciudad}\n";
     }
 }
 
